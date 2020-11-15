@@ -4,24 +4,23 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-
 try:
     # local
     # connection = psycopg2.connect(
-    #     user='cashmoney',
-    #     password="g3t0ffw0w!1",
-    #     host='localhost',
-    #     port='5432',
-    #     database='mypythondatabase'
+    #     user=os.getenv("LOCAL_DB_USER"),
+    #     password=os.getenv("LOCAL_DB_PASSWORD"),
+    #     host=os.getenv("LOCAL_DB_HOST"),
+    #     port=os.getenv('LOCAL_DB_PORT'),
+    #     database=os.getenv('LOCAL_DB_NAME')
     # )
 
     # ec2
     # connection = psycopg2.connect(
-    #     user='postgres',
-    #     password="postgres",
-    #     host='ec2-3-138-189-186.us-east-2.compute.amazonaws.com',
-    #     port='5432',
-    #     database='postgres'
+    #     user=os.getenv("EC2_DB_USER"),
+    #     password=os.getenv("EC2_DB_PASSWORD"),
+    #     host=os.getenv("EC2_DB_HOST"),
+    #     port=os.getenv("EC2_DB_PORT"),
+    #     database=os.getenv("EC2_DB_NAME")
     # )
 
     # database
